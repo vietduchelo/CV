@@ -7,6 +7,7 @@ var contactController = require('../controller/contactController');
 module.exports = router;
 
 router.post('/contact', contact)
+router.get('/contact',getContact)
 
 function contact(req, res, next) {
     var newContact = req.body;
@@ -36,4 +37,13 @@ function contact(req, res, next) {
                 next(err);
             })
     }
+}
+function getContact(req, res, next) {
+    contactController.getContact()
+        .then(function (contact) {
+            res.send(contact);
+        })
+        .catch(function (err) {
+            next(err);
+        })
 }
