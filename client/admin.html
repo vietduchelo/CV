@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style type="text/css">
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="content">
+      <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Message</th>
+      </tr>
+      
+    </table>
+
+    <script>
+        $(document).ready(function () {
+            var list = [];
+            getPostsFromServer();
+
+            function getPostsFromServer() {
+                $.ajax({
+                    url: 'https://hellovankhoahuynh.herokuapp.com/api/contact',
+                    method: "GET",
+                    data: {
+                        a: "B"
+                    },
+                    success: onSuccess,
+                    error: function (error) {
+                        console.log(error);
+                    }
+                });
+            }
+
+            function getItemHtml(name, email, message) {
+                var itemHtml =
+                '<tr>'+
+                    '<td>'
+                    + name + '</td>' +
+                    '<td>' + email + '</td>' +
+                    '<td>' + message + '</td>'+
+                    
+                '</tr>';
+                return itemHtml;
+            }
+
+            function onSuccess(posts, a, b) {
+                var list = posts;
+                var html = '';
+                for (var i = 0; i < list.length; i++) {
+                    html += getItemHtml(list[i].name, list[i].email, list[i].message);
+                }
+                $('.content').html(html);
+            }
+        });
+    </script>
+</body>
