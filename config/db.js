@@ -3,5 +3,5 @@ module.exports = {
     dbConnect: dbConnect
 }
 function dbConnect() {
-    mongoose.connect('mongodb://localhost:27017/contact');
+    mongoose.connect('mongodb://contact:123@ds127994.mlab.com:27994/contact');
 }
