@@ -8293,8 +8293,22 @@ a.bg-dark:hover {
 .text-center {
     text-align: center!important
 }
-
+@media(min-width:320px ){
+    #contact{
+        background-color: aliceblue;
+        color: black;
+        height: 515px;
+        padding-top: 40px;
+    }
+}
 @media (min-width:576px) {
+    #contact{
+        background-color: aliceblue;
+        color: black;
+        height: 515px;
+        padding-top: 40px;
+    }
+
     .text-sm-left {
         text-align: left!important
     }
