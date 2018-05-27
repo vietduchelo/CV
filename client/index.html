@@ -6,8 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>VanKhoa CV</title>
-  <meta name="description" content="Creative CV is a HTML resume template for professionals. Built with Bootstrap 4, Now UI Kit and FontAwesome, this modern and responsive design template is perfect to showcase your portfolio, skils and experience."
-  />
+  <meta name="description" content=""/>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
   <link href="css/aos.css" rel="stylesheet">
@@ -15,20 +14,20 @@
   <link href="styles/main.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous"> -->
 
-  <style>
-      #contact{
-        background-color: aliceblue; color: black;height: 300px;
-            padding-top: 40px;
-      }
-      @media screen and (max-width: 480px) {
-        #contact{
-        background-color: aliceblue;
-        color: black;
-        height: 515px;
+<style>
+  #contact{
+    background-color: aliceblue; color: black;height: 300px;
         padding-top: 40px;
-        }
+  }
+  @media screen and (max-width: 480px) {
+    #contact{
+    background-color: aliceblue;
+    color: black;
+    height: 515px;
+    padding-top: 40px;
     }
-    </style>
+}
+</style>
 </head>
 
 <body id="top">
@@ -109,7 +108,11 @@
                 <div class="card-body">
                   <div class="h4 mt-0 title">About</div>
                   <p>Xin chào, Tôi tên là Huỳnh Văn Khoa. Một Web Front-End Devloper và SEOer</p>
-                  <p>CV này được xây dựng bởi thư viện Boostrap và Font-awesome</p>
+                  <p>CV này được xây dựng từ HTML, CSS, thư viện Boostrap và JavaScript.
+                    Server viết bằng Node JS. <br>
+                   <span> Bạn có thể liên hệ với tôi thông qua Form Contact ở phía bên dưới:</span>
+                   <a class="nav-link smooth-scroll" href="#contact" style="text-decoration: underline">Click Here</a>
+                  </p>
                 </div>
               </div>
               <div class="col-lg-6 col-md-12">
@@ -351,6 +354,9 @@
                 <ol class="carousel-indicators">
                   <li class="active" data-target="#cc-Indicators" data-slide-to="0"></li>
                   <li data-target="#cc-Indicators" data-slide-to="1"></li>
+                  <li data-target="#cc-Indicators" data-slide-to="2"></li>
+                  <li data-target="#cc-Indicators" data-slide-to="3"></li>
+
                 </ol>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -375,6 +381,28 @@
                       </div>
                     </div>
                   </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-lg-2 col-md-3 cc-reference-header">
+                        <img src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.0-0/p206x206/29542800_1038615009619616_4145452009205036519_n.jpg?_nc_cat=0&_nc_eui2=AeHMFUcZTnOtacSftJb28oWSorz6GYHpoSvEEFGBUmmk47k0LcK0E86CLvNrlWglafYwLcvMNvIxMlOxCDXa-_x-2NDx7wFRtbfoSsn5BOeEkQ&oh=1d3122dbdb56bcdf6e35d689cb34f114&oe=5B8A349E" alt="Image" />
+                        <div class="h5 pt-2">Học Bổng Loại Khá 2015</div>
+                      </div>
+                      <div class="col-lg-10 col-md-9">
+                        <p>Được nhà trường cấp học bổng loại khá năm 2015</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-lg-2 col-md-3 cc-reference-header">
+                        <img src="https://scontent.fsgn3-1.fna.fbcdn.net/v/t1.0-0/p206x206/29542800_1038615009619616_4145452009205036519_n.jpg?_nc_cat=0&_nc_eui2=AeHMFUcZTnOtacSftJb28oWSorz6GYHpoSvEEFGBUmmk47k0LcK0E86CLvNrlWglafYwLcvMNvIxMlOxCDXa-_x-2NDx7wFRtbfoSsn5BOeEkQ&oh=1d3122dbdb56bcdf6e35d689cb34f114&oe=5B8A349E" alt="Image" />
+                        <div class="h5 pt-2">Học Bổng Loại Giỏi 2017</div>
+                      </div>
+                      <div class="col-lg-10 col-md-9">
+                        <p>Được nhà trường cấp học bổng loại giỏi năm 2017</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -382,14 +410,14 @@
         </div>
         <!---->
         <div class="h4 text-center mb-4 title">Contact</div>
-        <div id="contact" class="container-fluid bg-grey contact">
+        <div id="contact" class="container-fluid bg-grey" style="">
             <div class="row">
               <div class="col-sm-5">
                 <p>Bạn có thể liên lạc với tôi thông qua:</p>
                 <p>
                     <span class="glyphicon glyphicon-user"></span><span>97, Man Thiện, Hiệp Phú, Quận 9</span>
                 <p>
-                  <span class="glyphicon glyphicon-phone"></span> 01203716061-01643026275</p>
+                  <span class="glyphicon glyphicon-phone"></span> 01643026275-01658578560</p>
                 <p>
                   <span class="glyphicon glyphicon-envelope"></span> Huynhvankhoa06041996@gmail.com</p>
               </div>
@@ -471,7 +499,7 @@
               var marker = new google.maps.Marker({
                 position: uluru,
                 map: map,
-                title: 'Uluru (Ayers Rock)',
+                title: 'Uluru (Ayers RocK)',
                 draggable: true,
                 animation: google.maps.Animation.DROP
               });
